@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Losers Gainers Table</title>
+
+		<!-- Framework -->
+		<script src="js/stockrender-apprender.1.0.0.min.js"></script>
+		<!-- Framework -->
+
+		<!-- Supplementary Code -->
+		<!-- JS -->
+			<script src="js/LosersGainersFunctions.js"></script>
+		<!-- JS -->
+		<!-- CSS -->
+			<link rel="stylesheet" type="text/css" href="css/loading-anim.css">
+			<link rel="stylesheet" type="text/css" href="css/main.css">
+		<!-- CSS -->
+		<!-- Supplementary Code -->
+	</head>
+	
+	<body>
+
+	<table width = "50%" cellspacing="0" border="2" cellpadding="9" id="table1" class="table1">
+   
+    <col width="25%">
+    <col width="25%">
+    <col width="25%">
+    <col width="25%">
+
+    <tr>
+        <td>Losers</td>
+        <td>% Change</td>
+        <td>Gainers</td>
+        <td>% Change</td>
+    </tr>
+    <tr>
+    	<td colspan = "4" >
+    		<button onclick="AddRowFunction()">Create row</button>
+    		<button onclick="deleteRow(this)">Remove row</button>
+    	</td>
+    </tr>
+	</table>
+
+	</body>
+</html>
