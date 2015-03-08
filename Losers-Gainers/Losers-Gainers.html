@@ -5,7 +5,7 @@
 		<title>Losers Gainers Table</title>
 
 		<!-- Framework -->
-		<script src="js/stockrender-apprender.1.0.0.min.js"></script>
+			<script src="js/stockrender-apprender.1.0.0.min.js"></script>
 		<!-- Framework -->
 
 		<!-- Supplementary Code -->
@@ -15,6 +15,8 @@
 		<!-- CSS -->
 			<link rel="stylesheet" type="text/css" href="css/loading-anim.css">
 			<link rel="stylesheet" type="text/css" href="css/main.css">
+			<link rel="stylesheet" type="text/css" href="css/ionicons.css">
+			<link rel="stylesheet" type="text/css" href="css/format.css">
 		<!-- CSS -->
 		<!-- Supplementary Code -->
 	</head>
@@ -29,16 +31,19 @@
     <col width="25%">
 
     <tr>
-        <td>Losers</td>
-        <td>% Change</td>
-        <td>Gainers</td>
-        <td>% Change</td>
+        <th>Losers</th>
+        <th>% Change</th>
+        <th>Gainers</th>
+        <th>% Change</th>
     </tr>
     <tr>
-    	<td colspan = "4" >
-    		<button onclick="AddRowFunction()">Create row</button>
-    		<button onclick="deleteRow(this)">Remove row</button>
-    	</td>
+    	<th colspan = "4" >
+
+ 		<button onclick="addRowFunction()"> <i class="icon ion-android-add"></i> </button>
+ 		<button onclick=""> <i class="icon ion-android-settings"> </i> </button>
+      	<button onclick="deleteRow(this)"> <i class="icon ion-android-remove"> </i> </button>
+
+      	</th>
     </tr>
 	</table>
 

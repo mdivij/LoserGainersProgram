@@ -1,0 +1,15 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+tr:nth-child(odd)  {
+    background-color: green;
+    color: white;
+    font-size: 12;
+}
+
+tr:nth-child(even)  {
+    background-color: blue;
+    color: white;
+    font-size: 12;
+}

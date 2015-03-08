@@ -38,21 +38,6 @@ StockRender.AppRender.register({
 			});
 
 		/*Running Program*/
-		Runner.loadData(AppData,last_input);
-
-		/*Setting click events*/
-		$('#ticker-btn').click(function(){
-			Runner.toggleOverhead();					
-			Runner.loadData(AppData, $('#stock')[0].value);
-			return;
-		});
-
-		$('#stock').keypress(function(e){
-			if( e.which === 13 ) {
-				Runner.toggleOverhead();
-				Runner.loadData(AppData, $('#stock')[0].value);
-				return;
-			}
-		})
+		filler.loadData(AppData,last_input);
 	}
 });
