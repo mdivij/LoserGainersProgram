@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Losers Gainers Table</title>
+
+		<!-- Framework -->
+			<script src="js/stockrender-apprender.1.0.0.min.js"></script>
+		<!-- Framework -->
+
+		<!-- Supplementary Code -->
+		<!-- JS -->
+			<script src="js/LosersGainersFunctions.js"></script>
+			<script src="js/mainForLGTable.js"></script>
+			<script src="js/RunnerForLGTable.js"></script>
+		<!-- JS -->
+
+		<!-- CSS -->
+			<link rel="stylesheet" type="text/css" href="css/loading-anim.css">
+			<link rel="stylesheet" type="text/css" href="css/main.css">
+			<link rel="stylesheet" type="text/css" href="css/ionicons.css">
+			<link rel="stylesheet" type="text/css" href="css/format.css">
+		<!-- CSS -->
+		<!-- Supplementary Code -->
+	</head>
+	
+	<body>
+		<!-- 
+		<div class="overhead">
+			<div class="spinner"></div>
+			<span> Loading...</span>
+		</div>
+		-->
+		<div>
+			<table width = "50%" cellspacing="0" border="2" cellpadding="9" id="table1" class="table1">
+		   
+		    <col width="25%">
+		    <col width="25%">
+		    <col width="25%">
+		    <col width="25%">
+
+		    <tr>
+		        <th>Losers</th>
+		        <th>% Change</th>
+		        <th>Gainers</th>
+		        <th>% Change</th>
+		    </tr>
+		    <tr>
+		    	<th colspan = "4" >
+
+		 		<button onclick="addRowFunction()"> <i class="icon ion-android-add"></i> </button>
+		 		<button onclick=""> <i class="icon ion-android-settings"> </i> </button>
+		      	<button onclick="deleteRow(this)"> <i class="icon ion-android-remove"> </i> </button>
+
+		      	</th>
+		    </tr>
+			</table>
+		</div>
+
+	</body>
+</html>
