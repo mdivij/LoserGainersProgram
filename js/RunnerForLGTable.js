@@ -15,6 +15,7 @@ function Runner () {}
 	var todayPrice, yesterdayPrice;
 	var change;
 	var stockName;
+	
 
 Runner.loadData = function loadData(AppData, stockId){
 
@@ -40,6 +41,7 @@ Runner.loadData = function loadData(AppData, stockId){
 
 		change = ((todayPrice - yesterdayPrice) / todayPrice ) * 100;
 		change = Math.round(change * 100) / 100;
+
 
 		//check data
 
@@ -84,4 +86,3 @@ Runner.toggleOverhead = function toggleOverhead() {
 
 	return op;
 };
-

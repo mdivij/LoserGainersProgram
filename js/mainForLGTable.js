@@ -1,5 +1,7 @@
 'use strict';
 
+var theArray = []; 
+
 StockRender.AppRender.register({
 	id: "49e90eee6ce1942a94136fc8db19319c",
 	name: "LoserGainersProgram",
@@ -32,9 +34,18 @@ ready: function(AppMemory, AppData) {
 				//console.log(input);
 				Runner.loadData(AppData,input);
 
+				theArray.push([change, input]);
+				
 			}
+
+			theArray.sort(
+	        function (a, b){
+	            return a[0] - b[0];  
+        	} 
+        	);
 			
 		});
-
+			
+   
 	}
 });
