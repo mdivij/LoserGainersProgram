@@ -10,9 +10,7 @@
 
 		<!-- Supplementary Code -->
 		<!-- JS -->
-			<script src="js/LosersGainersFunctions.js"></script>
-			<script src="js/mainForLGTable.js"></script>
-			<script src="js/RunnerForLGTable.js"></script>
+		    <script src="js/LosersGainersFunctions.js"></script>  
 		<!-- JS -->
 
 		<!-- Supplementary Code -->
@@ -20,48 +18,17 @@
 			<link rel="stylesheet" type="text/css" href="css/loading-anim.css">
 			<link rel="stylesheet" type="text/css" href="css/main.css">
 			<link rel="stylesheet" type="text/css" href="css/ionicons.css">
-			<link rel="stylesheet" type="text/css" href="css/format.css">
 		<!-- CSS -->
 		
-		<!-- Modal Options Menu-->
-		<!-- JS -->
-			<script src="Basic/js/jquery.js"></script>
-			<script>
-			var $JQuery1_9 = $.noConflict(true); 
-			</script>
-			<script src="Basic/js/jquery.simplemodal.js"></script>
-			<script src="Basic/js/basic.js"></script>
-		<!-- JS -->
-		<!-- CSS -->
-			<link rel="stylesheet" type="text/css" href="Basic/css/demo.css"  media="screen" />
-			<link rel="stylesheet" type="text/css" href="Basic/css/basic.css" media="screen" />
-		<!-- CSS -->
-
-		<!-- Colour Wheel-->
-		<!-- JS -->
-			<script src="ColourWheel/js/jquery2.js"></script>
-			<script>
-			var $JQuery1_3_2 = $.noConflict(true);
-			</script> 
-			<script src="ColourWheel/js/colorpicker.js"></script>
-			<script src="ColourWheel/js/eye.js"></script>
-			<script src="ColourWheel/js/layout.js"></script>
-			<script src="ColourWheel/js/utils.js"></script>
-		<!-- JS -->
-		<!-- CSS -->
-			<link rel="stylesheet" type="text/css" href="ColourWheel/css/colorpicker.css" media="screen"/>
-			<link rel="stylesheet" type="text/css" href="ColourWheel/css/layout.css" media="screen" />
-		<!-- CSS -->
-
 	</head>
 	
 	<body>
-		<!-- 
+	<!--
 		<div class="overhead">
 			<div class="spinner"></div>
 			<span> Loading...</span>
 		</div>
-		-->
+	-->
 		<div>
 			<table width = "50%" cellspacing="0" border="2" cellpadding="9" id="table1" class="table1">
 		   
@@ -82,35 +49,12 @@
 		 		<button onclick="addRowFunction()"> <i class="icon ion-android-add"></i> </button>
 		 		<button onclick="openMenu()"> <i class="icon ion-android-settings"> </i> </button>
 		      	<button onclick="deleteRow(this)"> <i class="icon ion-android-remove"> </i> </button>
-				
-				<div id="colorSelector"><div style="background-color: #ff0000"></div></div>
 
-<script>
-				var newColour = "#ff0000";
-				$('#colorSelector').ColorPicker({
-					color: '#ff0000',
-					onShow: function (colpkr) {
-						$(colpkr).fadeIn(500);
-						return false;
-					},
-					onHide: function (colpkr) {
-						$(colpkr).fadeOut(500);
-						return false;
-					},
-					onSubmit: function (hsb, hex, rgb) {
-						$("#colorSelector div").css("backgroundColor", "#" + hex)
-						newColour = "#" + hex;
-						console.log(newColour);
-						document.getElementById("table1").style.backgroundColor = newColour;
-					}
-				});
-
-</script>
-	
 		     	</th>
 		    </tr>
 			</table>
 		</div>
 
 	</body>
+
 </html>
