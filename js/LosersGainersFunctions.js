@@ -56,7 +56,7 @@ console.log("running beforeRender!");
 */
 ready: function(AppMemory, AppData) {
 
-        AppData.v1.Tickerlist.GET("json")
+        SR.AppData.v1.Tickerlist.GET("json")
         .then(function(data){
         
         console.log(data);
@@ -88,7 +88,7 @@ function Runner () {}   //creates the Runner function
 Runner.loadData = function loadData(AppData, stockId){
     var checks = 0;
 
-    AppData.v1.pricedata.GET(stockId)
+    SR.AppData.v1.pricedata.GET(stockId)
     .then(function(data){
 
         todayPrice = data.response.data.slice(0,1)[0][1];
